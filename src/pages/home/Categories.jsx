@@ -29,6 +29,7 @@ const Categories = () => {
                 ))
             }
         </div>
+        
     </div>
   )
 }
