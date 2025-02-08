@@ -7,6 +7,8 @@ const categoryItems = [
     {id: 4, title: "Facial Services", despriction: "(6 services)", image: "/images/home/category/img4.png"}
 ]
 
+
+
 const Categories = () => {
   return (
     <div className='max-w-screen-2xl container mx-auto xl:px-24 px-4 py-16'>
@@ -29,9 +31,9 @@ const Categories = () => {
                 ))
             }
         </div>
-        
+
     </div>
   )
 }
 
-export default Categories
+export default Categories;
