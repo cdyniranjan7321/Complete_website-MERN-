@@ -1,14 +1,15 @@
 import React from 'react'
 import Banner from '../../components/Banner'
 import Categories from './Categories';
-import SpecialDishes from './SpecialDishes';
+
+import Appointments from './Appointment';
 
 const Home = () => {
   return (
     <div>
     <Banner/>
     <Categories/>
-    <SpecialDishes/>
+    <Appointments/>
     </div>
   )
 }
