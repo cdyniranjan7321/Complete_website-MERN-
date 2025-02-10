@@ -10,8 +10,10 @@ export default {
         "green" : "#39DB4A",
         "red" : "#FF6868",
         "secondary" : "#555",
-        "primary" : "#FCFCFC"
+        "primary" : "#FCFCFC",
+        
       },
+
       fontFamily: {
         "primary" : ['Inter', 'sans-serif']
       }
