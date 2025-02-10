@@ -1,5 +1,4 @@
 import React from 'react'
-import Heading from '../../components/Heading';
 
 
 import appointmentImg from "/images/home/appointment.png";
