@@ -5,7 +5,8 @@
         "services": "Description of the service.",
         "image": "/images/services/img1.png",
         "category": "popular",
-        "price": 500.00
+        "price": 500.00,
+        "rating": 4.5
     },
     {
         "_id": "642c155b2c4774f05c36eeb9",
@@ -13,7 +14,8 @@
         "services": "Description of the service.",
         "image": "/images/services/img2.png",
         "category": "popular",
-        "price": 300.00
+        "price": 300.00,
+        "rating": 4.2
     },
     {
         "_id": "642c155b2c4774f05c36ee7c",
@@ -21,7 +23,8 @@
         "services": "Description of the service.",
         "image": "/images/services/img3.png",
         "category": "popular",
-        "price": 1000.00
+        "price": 1000.00,
+        "rating": 4.8
     },
     {
         "_id": "642c155b2c4774f05c36eec9",
@@ -29,7 +32,8 @@
         "services": "Description of the service.",
         "image": "/images/services/img1.png",
         "category": "popular",
-        "price": 1500.00
+        "price": 1500.00,
+        "rating": 5.0
     },
     {
         "_id": "642c155b2c4774f05c36eeca",
@@ -37,7 +41,8 @@
         "services": "Description of the service.",
         "image": "/images/services/img2.png",
         "category": "trending",
-        "price": 250.00
+        "price": 250.00,
+        "rating": 4.3
     },
     {
         "_id": "642c155b2c4774f05c36eecb",
@@ -45,7 +50,8 @@
         "services": "Description of the service.",
         "image": "/images/services/img3.png",
         "category": "popular",
-        "price": 800.00
+        "price": 800.00,
+        "rating": 4.6
     },
     {
         "_id": "642c155b2c4774f05c36eecc",
@@ -53,7 +59,8 @@
         "services": "Description of the service.",
         "image": "/images/services/img1.png",
         "category": "trending",
-        "price": 1200.00
+        "price": 1200.00,
+        "rating": 4.4
     },
     {
         "_id": "642c155b2c4774f05c36eecd",
@@ -61,7 +68,8 @@
         "services": "Description of the service.",
         "image": "/images/services/img2.png",
         "category": "premium",
-        "price": 2500.00
+        "price": 2500.00,
+        "rating": 5.0
     },
     {
         "_id": "642c155b2c4774f05c36eece",
@@ -69,7 +77,8 @@
         "services": "Description of the service.",
         "image": "/images/services/img3.png",
         "category": "popular",
-        "price": 1000.00
+        "price": 1000.00,
+        "rating": 4.5
     },
     {
         "_id": "642c155b2c4774f05c36eecf",
@@ -77,7 +86,8 @@
         "services": "Description of the service.",
         "image": "/images/services/img1.png",
         "category": "popular",
-        "price": 400.00
+        "price": 400.00,
+        "rating": 4.1
     },
     {
         "_id": "642c155b2c4774f05c36eed0",
@@ -85,7 +95,8 @@
         "services": "Description of the service.",
         "image": "/images/services/img2.png",
         "category": "premium",
-        "price": 1800.00
+        "price": 1800.00,
+        "rating": 4.7
     },
     {
         "_id": "642c155b2c4774f05c36eed1",
@@ -93,7 +104,8 @@
         "services": "Description of the service.",
         "image": "/images/services/img3.png",
         "category": "popular",
-        "price": 2000.00
+        "price": 2000.00,
+        "rating": 4.8
     },
     {
         "_id": "642c155b2c4774f05c36eed2",
@@ -101,7 +113,8 @@
         "services": "Description of the service.",
         "image": "/images/services/img1.png",
         "category": "trending",
-        "price": 600.00
+        "price": 600.00,
+        "rating": 4.5
     },
     {
         "_id": "642c155b2c4774f05c36eed3",
@@ -109,7 +122,8 @@
         "services": "Description of the service.",
         "image": "/images/services/img2.png",
         "category": "popular",
-        "price": 350.00
+        "price": 350.00,
+        "rating": 4.0
     },
     {
         "_id": "642c155b2c4774f05c36eed4",
@@ -117,7 +131,8 @@
         "services": "Description of the service.",
         "image": "/images/services/img3.png",
         "category": "premium",
-        "price": 3000.00
+        "price": 3000.00,
+        "rating": 4.9
     },
     {
         "_id": "642c155b2c4774f05c36eed5",
@@ -125,62 +140,7 @@
         "services": "Description of the service.",
         "image": "/images/services/img1.png",
         "category": "trending",
-        "price": 700.00
-    },
-    {
-        "_id": "642c155b2c4774f05c36eed6",
-        "name": "Eyebrow Shaping",
-        "services": "Description of the service.",
-        "image": "/images/services/img2.png",
-        "category": "popular",
-        "price": 300.00
-    },
-    {
-        "_id": "642c155b2c4774f05c36eed7",
-        "name": "Haircut & Wash",
-        "services": "Description of the service.",
-        "image": "/images/services/img3.png",
-        "category": "popular",
-        "price": 800.00
-    },
-    {
-        "_id": "642c155b2c4774f05c36eed8",
-        "name": "Dandruff Treatment",
-        "services": "Description of the service.",
-        "image": "/images/services/img1.png",
-        "category": "premium",
-        "price": 1500.00
-    },
-    {
-        "_id": "642c155b2c4774f05c36eed9",
-        "name": "Men's Pedicure",
-        "services": "Description of the service.",
-        "image": "/images/services/img2.png",
-        "category": "popular",
-        "price": 1000.00
-    },
-    {
-        "_id": "642c155b2c4774f05c36eeda",
-        "name": "Men's Manicure",
-        "services": "Description of the service.",
-        "image": "/images/services/img3.png",
-        "category": "trending",
-        "price": 900.00
-    },
-    {
-        "_id": "642c155b2c4774f05c36eedb",
-        "name": "Hair Restoration",
-        "services": "Description of the service.",
-        "image": "/images/services/img1.png",
-        "category": "premium",
-        "price": 3500.00
-    },
-    {
-        "_id": "642c155b2c4774f05c36eedc",
-        "name": "Hydrating Facial",
-        "services": "Description of the service.",
-        "image": "/images/services/img2.png",
-        "category": "premium",
-        "price": 2000.00
+        "price": 700.00,
+        "rating": 4.2
     }
 ]
