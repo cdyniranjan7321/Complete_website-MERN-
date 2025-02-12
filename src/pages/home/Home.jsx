@@ -1,15 +1,23 @@
 import React from 'react'
 import Banner from '../../components/Banner'
 import Categories from './Categories';
+import SpecialServices from './SpecialServices';
+import OurServices from './OurServices';
+import Testimonials from './Testimonials';
+import OurExpertises from './OurExpertise';
+import Appointments from './Appointments';
 
-import Appointments from './Appointment';
 
 const Home = () => {
   return (
     <div>
     <Banner/>
     <Categories/>
+    <SpecialServices/>
     <Appointments/>
+    <OurServices/>
+    <OurExpertises/>
+    <Testimonials/>
     </div>
   )
 }

@@ -1,0 +1,186 @@
+[
+    {
+        "_id": "642c155b2c4774f05c36eeaa",
+        "name": "signature haircut",
+        "services": "Description of the service.",
+        "image": "/images/services/img1.png",
+        "category": "popular",
+        "price": 500.00
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb9",
+        "name": "Beard Shaping",
+        "services": "Description of the service.",
+        "image": "/images/services/img2.png",
+        "category": "popular",
+        "price": 300.00
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee7c",
+        "name": "Hair Tattoo",
+        "services": "Description of the service.",
+        "image": "/images/services/img3.png",
+        "category": "popular",
+        "price": 1000.00
+    },
+    {
+        "_id": "642c155b2c4774f05c36eec9",
+        "name": "Luxury Hair Spa",
+        "services": "Description of the service.",
+        "image": "/images/services/img1.png",
+        "category": "popular",
+        "price": 1500.00
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeca",
+        "name": "Classic Shave",
+        "services": "Description of the service.",
+        "image": "/images/services/img2.png",
+        "category": "trending",
+        "price": 250.00
+    },
+    {
+        "_id": "642c155b2c4774f05c36eecb",
+        "name": "Head Massage",
+        "services": "Description of the service.",
+        "image": "/images/services/img3.png",
+        "category": "popular",
+        "price": 800.00
+    },
+    {
+        "_id": "642c155b2c4774f05c36eecc",
+        "name": "Hair Coloring",
+        "services": "Description of the service.",
+        "image": "/images/services/img1.png",
+        "category": "trending",
+        "price": 1200.00
+    },
+    {
+        "_id": "642c155b2c4774f05c36eecd",
+        "name": "Keratin Treatment",
+        "services": "Description of the service.",
+        "image": "/images/services/img2.png",
+        "category": "premium",
+        "price": 2500.00
+    },
+    {
+        "_id": "642c155b2c4774f05c36eece",
+        "name": "Scalp Detox",
+        "services": "Description of the service.",
+        "image": "/images/services/img3.png",
+        "category": "popular",
+        "price": 1000.00
+    },
+    {
+        "_id": "642c155b2c4774f05c36eecf",
+        "name": "Beard Trim & Style",
+        "services": "Description of the service.",
+        "image": "/images/services/img1.png",
+        "category": "popular",
+        "price": 400.00
+    },
+    {
+        "_id": "642c155b2c4774f05c36eed0",
+        "name": "Facial for Men",
+        "services": "Description of the service.",
+        "image": "/images/services/img2.png",
+        "category": "premium",
+        "price": 1800.00
+    },
+    {
+        "_id": "642c155b2c4774f05c36eed1",
+        "name": "Hair Highlights",
+        "services": "Description of the service.",
+        "image": "/images/services/img3.png",
+        "category": "popular",
+        "price": 2000.00
+    },
+    {
+        "_id": "642c155b2c4774f05c36eed2",
+        "name": "Hot Towel Shave",
+        "services": "Description of the service.",
+        "image": "/images/services/img1.png",
+        "category": "trending",
+        "price": 600.00
+    },
+    {
+        "_id": "642c155b2c4774f05c36eed3",
+        "name": "Straight Razor Shave",
+        "services": "Description of the service.",
+        "image": "/images/services/img2.png",
+        "category": "popular",
+        "price": 350.00
+    },
+    {
+        "_id": "642c155b2c4774f05c36eed4",
+        "name": "Hair Smoothing",
+        "services": "Description of the service.",
+        "image": "/images/services/img3.png",
+        "category": "premium",
+        "price": 3000.00
+    },
+    {
+        "_id": "642c155b2c4774f05c36eed5",
+        "name": "Beard Coloring",
+        "services": "Description of the service.",
+        "image": "/images/services/img1.png",
+        "category": "trending",
+        "price": 700.00
+    },
+    {
+        "_id": "642c155b2c4774f05c36eed6",
+        "name": "Eyebrow Shaping",
+        "services": "Description of the service.",
+        "image": "/images/services/img2.png",
+        "category": "popular",
+        "price": 300.00
+    },
+    {
+        "_id": "642c155b2c4774f05c36eed7",
+        "name": "Haircut & Wash",
+        "services": "Description of the service.",
+        "image": "/images/services/img3.png",
+        "category": "popular",
+        "price": 800.00
+    },
+    {
+        "_id": "642c155b2c4774f05c36eed8",
+        "name": "Dandruff Treatment",
+        "services": "Description of the service.",
+        "image": "/images/services/img1.png",
+        "category": "premium",
+        "price": 1500.00
+    },
+    {
+        "_id": "642c155b2c4774f05c36eed9",
+        "name": "Men's Pedicure",
+        "services": "Description of the service.",
+        "image": "/images/services/img2.png",
+        "category": "popular",
+        "price": 1000.00
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeda",
+        "name": "Men's Manicure",
+        "services": "Description of the service.",
+        "image": "/images/services/img3.png",
+        "category": "trending",
+        "price": 900.00
+    },
+    {
+        "_id": "642c155b2c4774f05c36eedb",
+        "name": "Hair Restoration",
+        "services": "Description of the service.",
+        "image": "/images/services/img1.png",
+        "category": "premium",
+        "price": 3500.00
+    },
+    {
+        "_id": "642c155b2c4774f05c36eedc",
+        "name": "Hydrating Facial",
+        "services": "Description of the service.",
+        "image": "/images/services/img2.png",
+        "category": "premium",
+        "price": 2000.00
+    }
+]
