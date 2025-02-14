@@ -44,9 +44,12 @@ const SpecialServices = () => {
     fetch("/menu.json")
     .then((res) => res.json())
     .then((data) => {
+       
+      // No filtering, just set all itmes to state removed it
       const specials = data.filter((item) => item.category ==="popular")
 
       // console.log(specials)
+      // setServices(data);
       setServices(specials)
     });
 
