@@ -1,5 +1,5 @@
-import React from 'react'
-import Banner from '../../components/Banner'
+import React from 'react';
+import Banner from '../../components/Banner';
 import Categories from './Categories';
 import SpecialServices from './SpecialServices';
 import OurServices from './OurServices';

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { BiPhoneCall } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isSticky, setSticky] = useState(false);
@@ -30,18 +31,31 @@ const Navbar = () => {
       
       <a href="/">Home</a>
       </li>
-      <li tabIndex={0}>
-        <details>
-          <summary>Services</summary>
-          <ul className="p-2">
+
+      <li>
+        <Link to ="/services">Services</Link>
+      </li>
+      {/*<li tabIndex={0}> */}
+        {/*  <details> */}
+
+
+          {/*<a>Services</a> */}
+
+         {/* <ul className="p-2">
             <li><a>Online Order</a></li>
             <li><a>Seat Booking</a></li>
             <li><a>Service Tracking</a></li>
-          </ul>
-        </details>
-      </li>
-      <li><a>Appointment</a></li>
-      <li><a>About us</a></li>
+          </ul>*/}
+
+
+       {/* </details>*/} 
+      {/*</li>*/}
+      <li>
+        <Link to ="/appointment">Appointment
+        </Link>
+        
+        </li>
+      <li><Link to="/about">About us</Link></li>
      </>
      );
 

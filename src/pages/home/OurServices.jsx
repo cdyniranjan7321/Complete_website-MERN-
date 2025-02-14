@@ -13,7 +13,7 @@ const OurServices = () => {
 
   return (
     <div className="section-container my-16">
-      <div className="flex flex-col md:flex-row items-center justify-between gap-12">
+      <div className="flex flex-col md:flex-row items-center justify-between gap-0">
         <div className="md:w-1/2">
           <div className="text-left md:w-4/5">
             <p className="subtitle">Our Story & Services</p>
