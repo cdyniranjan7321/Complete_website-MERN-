@@ -107,7 +107,7 @@ const Services = () => {
           </div>
 
           {error && <p className="text-red-500 mt-4">{error}</p>}
-          <button type="submit" className="btn btn-primary mt-4" disabled={loading}>
+          <button type="submit" className="bg-green font-semibold btn text-white px-8 py-3 rounded-full mt-8" disabled={loading}>
             {loading ? "Saving..." : "Save Service"}
           </button>
         </form>
@@ -117,3 +117,5 @@ const Services = () => {
 };
 
 export default Services;
+
+
