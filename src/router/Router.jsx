@@ -5,6 +5,7 @@ import Services from "../pages/services/Services";
 import Appointment from "../pages/appointment/Appointment";
 import About from "../pages/about/About";
 import Contact from "../pages/contact/Contact";
+import BookAppointment from "../pages/appointment/BookAppointment";
 
 
 const router = createBrowserRouter([
@@ -23,6 +24,9 @@ const router = createBrowserRouter([
             {
                 path:"/appointment",
                 element:<Appointment/>
+            },
+            { path: "/appointment/book", 
+                element: <BookAppointment /> 
             },
             {
                 path:"/about",
