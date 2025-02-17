@@ -54,7 +54,7 @@ const AppointmentPage = () => {
             </div>
 
             <div className="mb-4">
-              <label htmlFor="phone" className="block text-gray-700 font-medium mb-2">Phone Number</label>
+              <label htmlFor="phone" className="block text-gray-700 font-medium mb-2">Phone Number or Email</label>
               <input
                 type="tel"
                 id="phone"
@@ -137,7 +137,7 @@ const AppointmentPage = () => {
 
             <button
               type="submit"
-              className="w-full py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="bg-green font-semibold btn text-white px-8 py-3 rounded-full mt-8"
             >
               Book Appointment
             </button>
