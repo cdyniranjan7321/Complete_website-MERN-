@@ -22,6 +22,8 @@ const AppointmentPage = () => {
     { name: 'Hair Tattoo', description: 'Transform your look using a stylish hair tattoo.' },
   ];
 
+
+  
   const handleServiceChange = (e) => {
     const { name, checked } = e.target;
     if (checked) {
@@ -82,7 +84,9 @@ const AppointmentPage = () => {
       setError('Something went wrong!');
     }
   };
+
   
+
 
   const closeModal = () => {
     setShowModal(false);
@@ -100,7 +104,7 @@ const AppointmentPage = () => {
   
 
   return (
-    <div className="min-h-screen flex flex-col justify-between mt-6">
+    <div className="min-h-screen flex flex-col justify-between mt-12">
       <div className="flex-grow flex justify-center items-center py-12">
         <div className="max-w-lg w-full p-6 bg-white rounded-lg shadow-md">
           <h1 className="text-2xl font-semibold text-center mb-6">Book Your Barber Appointment</h1>
@@ -222,7 +226,7 @@ const AppointmentPage = () => {
                 <p>{confirmation}</p>
                 <button
                   onClick={closeModal}
-                  className="mt-4 bg-blue-500 text-white px-4 py-2 rounded-md"
+                  className="mt-4 bg-green text-white px-4 py-2 rounded-md"
                 >
                   Close
                 </button>

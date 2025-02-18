@@ -1,7 +1,9 @@
 import React from "react";
 import appointmentImg from "/images/home/appointment.png";
+import { useNavigate } from "react-router-dom";
 
 const Appointments = () => {
+  const navigate = useNavigate();
   return (
     <div className="section-container">
       <div className="flex flex-col md:flex-row items-center justify-between gap-16">
@@ -32,7 +34,9 @@ const Appointments = () => {
             <p className="my-5 text-[16px] text-secondary leading-[30px]">
               With our easy online booking system, you can choose your preferred time and barber, ensuring a seamless, appointment-only experience. No more waiting in line—just arrive, relax, and enjoy top-notch service!
             </p>
-            <button className="bg-green font-semibold btn text-white px-8 py-3 rounded-full">
+            <button  
+            onClick={() => navigate("/appointment/book")}
+            className="bg-green font-semibold btn text-white px-8 py-3 rounded-full">
               Book Now
             </button>
           </div>

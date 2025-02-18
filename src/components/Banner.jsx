@@ -1,7 +1,9 @@
-import React from 'react'
+import React from 'react';
+import { useNavigate } from "react-router-dom";
 import bannerImg from "/images/home/banner.png";
 
 const Banner = () => {
+   const navigate = useNavigate();
   return (
     <div className="max-w-screen-2xl container mx-auto xl:px-24 bg-gradient-to-r from-0% from-[#FAFAFA] to-[#FCFCFC] to-100%">
       <div className="py-24 flex flex-col md:flex-row-reverse items-center justify-between gap-8">
@@ -22,7 +24,9 @@ const Banner = () => {
             Where Every Trim, and Style Tells a Story of Mastery and Timeless
             Craftsmanship.
           </p>
-          <button className="bg-green font-semibold btn text-white px-8 py-3 rounded-full">
+          <button
+          onClick={() => navigate("/appointment")}
+           className="bg-green font-semibold btn text-white px-8 py-3 rounded-full">
             Book Now
           </button>
         </div>
