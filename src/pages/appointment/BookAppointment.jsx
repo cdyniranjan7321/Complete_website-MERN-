@@ -82,6 +82,7 @@ const AppointmentPage = () => {
       setError('Something went wrong!');
     }
   };
+  
 
   const closeModal = () => {
     setShowModal(false);
