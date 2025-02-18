@@ -18,7 +18,7 @@ const Footer = () => {
     } hover:text-[#16A34A]`;
 
   return (
-    <footer className="bg-[#C8F5CC] py-10">
+    <footer className="bg-[#C8F5CC] py-10 mt-10">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
         {/* Logo & Description */}
         <div>

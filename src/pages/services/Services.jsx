@@ -90,7 +90,7 @@ const Services = () => {
   return (
     <div className="min-h-screen">
       <div className="container mx-auto py-16">
-        <h1 className="text-4xl font-bold text-center mb-8">Manage Services</h1>
+        <h1 className="text-4xl font-bold text-center mb-8 mt-12">Manage Services</h1>
 
         <form onSubmit={handleSubmit} className="mb-8 p-6 border rounded-lg shadow-md">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

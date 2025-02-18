@@ -5,7 +5,7 @@ const Aboutus = () => {
   return (
     <div className="section-container mt-12"> {/* Added mt-12 to give space from navbar */}
       <div className="flex flex-col md:flex-row items-center justify-between gap-12">
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 mt-12">
           <img 
             src="/images/home/testimonials/testimonials.jpg" 
             alt="About us"
