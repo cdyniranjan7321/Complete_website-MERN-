@@ -22,6 +22,8 @@ const AppointmentPage = () => {
     { name: 'Hair Tattoo', description: 'Transform your look using a stylish hair tattoo.' },
   ];
 
+
+  
   const handleServiceChange = (e) => {
     const { name, checked } = e.target;
     if (checked) {
