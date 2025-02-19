@@ -12,10 +12,10 @@ const Cards = ({ item }) => {
   };
 
   return (
-    <div className="card w-96 bg-base-100 shadow-xl relative">
+    <div className="w-full max-w-sm bg-base-100 shadow-xl relative p-4 rounded-lg">
       {/* Heart Icon */}
       <div
-        className={`rating gap-1 absolute right-2 top-2 p-4 heartStar bg-green ${
+        className={`absolute right-2 top-2 p-2 rounded-full ${
           isHeartFilled ? 'text-rose-500' : 'text-white'
         }`}
         onClick={handleHeartClick}
@@ -29,28 +29,28 @@ const Cards = ({ item }) => {
           <img
             src={item.image}
             alt=""
-            className="hover:scale-105 transition-all duration-200 md:h-72"
+            className="hover:scale-105 transition-all duration-200 md:h-72 w-full object-cover rounded-lg"
           />
         </figure>
       </Link>
 
       {/* Card Body */}
-      <div className="card-body">
+      <div className="card-body p-4">
         <Link to={`/menu/${item._id}`}>
-          <h2 className="card-title">{item.name}</h2>
+          <h2 className="card-title text-lg font-bold">{item.name}</h2>
         </Link>
-        <p>Description of the service</p>
-        <div className="card-actions justify-between items-center mt-2">
+        <p className="text-gray-500 text-sm">Description of the service</p>
+        <div className="flex justify-between items-center mt-2">
           {/* Price */}
-          <h5 className="font-semibold">
-            <span className="text-sm text-red">$</span>{' '}
+          <h5 className="font-semibold text-lg">
+            <span className="text-sm text-red-500">$</span>{' '}
             {Intl.NumberFormat('en-US', { minimumFractionDigits: 2 }).format(item.price)}
           </h5>
 
           {/* Star with Number */}
           <div className="flex items-center space-x-1">
-            <FaStar className="text-yellow-300" />
-            <span className="font-medium text-gray-6">{item.rating}</span>
+            <FaStar className="text-yellow-400" />
+            <span className="font-medium text-gray-700">{item.rating}</span>
           </div>
         </div>
       </div>

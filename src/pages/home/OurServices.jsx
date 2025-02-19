@@ -25,7 +25,7 @@ const OurServices = () => {
               refreshed.
             </p>
 
-            <button className="bg-green font-semibold btn text-white px-8 py-3 rounded-full">
+            <button className="bg-green font-semibold btn text-white px-10 py-3 rounded-full">
               Call Us
             </button>
           </div>
