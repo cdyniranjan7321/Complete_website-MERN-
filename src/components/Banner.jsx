@@ -17,7 +17,7 @@ const Banner = () => {
 
         {/* Left side==texts */}
         <div className="md:w-1/2 px-4 space-y-7">
-        <h2 className="md:text-5xl text-4xl font-bold md:leading-snug leading-snug">
+        <h2 className="md:text-5xl text-4xl font-bold md:leading-snug leading-snug mt-6">
             Dive Into Dapper, Define Your <span className="text-green">Style!</span>
           </h2>
           <p className="text-[#4A4A4A] text-xl">
@@ -26,7 +26,7 @@ const Banner = () => {
           </p>
           <button
           onClick={() => navigate("/appointment")}
-           className="bg-green font-semibold btn text-white px-8 py-3 rounded-full">
+           className="bg-green font-semibold btn text-white px-10 py-3 rounded-full">
             Book Now
           </button>
         </div>

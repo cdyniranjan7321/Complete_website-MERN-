@@ -36,7 +36,7 @@ const Appointments = () => {
             </p>
             <button  
             onClick={() => navigate("/appointment/book")}
-            className="bg-green font-semibold btn text-white px-8 py-3 rounded-full">
+            className="bg-green font-semibold btn text-white px-10 py-3 rounded-full">
               Book Now
             </button>
           </div>
