@@ -101,6 +101,7 @@ const AppointmentPage = () => {
     setPeriod('AM');
     setServices([]);
   };
+
   
 
   return (
@@ -162,6 +163,7 @@ const AppointmentPage = () => {
                   className="w-16 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                   required
                 />
+
                 <span className="text-gray-700">:</span>
                 <input
                   type="number"
@@ -233,6 +235,7 @@ const AppointmentPage = () => {
               </div>
             </div>
           )}
+          
         </div>
       </div>
     </div>
