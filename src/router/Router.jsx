@@ -6,7 +6,9 @@ import Appointment from "../pages/appointment/Appointment";
 import About from "../pages/about/About";
 import Contact from "../pages/contact/Contact";
 import BookAppointment from "../pages/appointment/BookAppointment";
-
+import StaffSelection from "../pages/appointment/StaffSelection";
+import DateTimeSelection from "../pages/appointment/DateTimeSelection";
+import BookingConfirmation from "../pages/appointment/BookingConfirmation";
 
 const router = createBrowserRouter([
     {
@@ -28,6 +30,19 @@ const router = createBrowserRouter([
             { path: "/appointment/book", 
                 element: <BookAppointment /> 
             },
+            {
+                path:"/staff-selection",
+                element: <StaffSelection/>
+            },
+            {
+                path: "/appointment/summary",
+                element:<DateTimeSelection/>
+            },
+            {
+                 path:"/bookingconfirmation",
+                 element:<BookingConfirmation/>
+            },
+
             {
                 path:"/about",
                 element:<About/>
