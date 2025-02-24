@@ -34,11 +34,30 @@ const BookingConfirmation = () => {
     alert("Booking Confirmed!");
     navigate("/confirmation-success");
   };
+  
   const handleConfirmBooking = () => {
+    // Check if primary fields are filled
+    if (!formData.fullName || !formData.email || !formData.phone) {
+      alert("Please fill out all required fields (Full Name, Email, and Phone).");
+      return;
+    }
+  
+    // Check if date and time are selected
     if (!selectedDate || !selectedTime) {
       alert("Please select a date and time.");
       return;
     }
+    
+  // Navigate to Booking History page with booking details
+  navigate("/booking-history", {
+    state: {
+      selectedServices,
+      selectedStaff,
+      selectedDate,
+      selectedTime,
+      formData,
+    },
+  });
   };
 
   return (
@@ -226,7 +245,7 @@ const BookingConfirmation = () => {
           className="bg-green font-semibold btn text-white px-8 py-3 rounded-full w-full mt-5"
           onClick={handleConfirmBooking}
         >
-          Continue
+          Confirm Booking
         </button>
       </div>
     </div>

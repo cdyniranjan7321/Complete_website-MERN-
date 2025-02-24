@@ -33,7 +33,28 @@ const DateTimeSelection = () => {
       {/* Left Section - Calendar and Time Slots */}
       <div className="w-full lg:w-2/3 bg-white p-6 rounded-lg shadow-lg">
         <h3 className="text-lg font-semibold mb-3">Select Date & Time</h3>
-        <Calendar onChange={setSelectedDate} value={selectedDate} className="mb-4" />
+
+          <Calendar
+                      onChange={setSelectedDate}
+                      value={selectedDate}
+                      minDate={new Date()} // Prevents selection of past dates
+                      className="mb-4"
+                      tileClassName={({ date, view }) => {
+                  if (view === "month") {
+                  const today = new Date();
+                  const tomorrow = new Date();
+                  tomorrow.setDate(today.getDate() + 1);
+
+      if (date < today.setHours(0, 0, 0, 0)) {
+        return "text-gray-400"; // Light black (gray) for past dates
+      } else if (date.toDateString() === today.toDateString() || date.toDateString() === tomorrow.toDateString()) {
+        return "text-black font-bold"; // Black for today and tomorrow
+      }
+    }
+  }}
+/>
+
+
         <h4 className="text-md font-semibold mt-4">Select Time</h4>
         <div className="grid grid-cols-3 gap-3 mt-2">
           {timeSlots.map((time, index) => (

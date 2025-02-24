@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+{/* import React, { useState } from "react";
 
 const Services = () => {
   const [services, setServices] = useState([]);
@@ -118,4 +118,15 @@ const Services = () => {
 
 export default Services;
 
+*/}
+import React from 'react'
 
+const Services = () => {
+  return (
+    <div>
+    
+    </div>
+  )
+}
+
+export default Services

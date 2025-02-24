@@ -9,6 +9,7 @@ import BookAppointment from "../pages/appointment/BookAppointment";
 import StaffSelection from "../pages/appointment/StaffSelection";
 import DateTimeSelection from "../pages/appointment/DateTimeSelection";
 import BookingConfirmation from "../pages/appointment/BookingConfirmation";
+import BookingHistory from "../pages/appointment/BookingHistory";
 
 const router = createBrowserRouter([
     {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
             {
                  path:"/bookingconfirmation",
                  element:<BookingConfirmation/>
+            },
+            {
+                path:"/booking-history",
+                element:<BookingHistory/>
             },
 
             {
