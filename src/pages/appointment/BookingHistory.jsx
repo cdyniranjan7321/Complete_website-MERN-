@@ -84,7 +84,12 @@ const BookingHistory = () => {
 
 
   return (
-       <div className="flex flex-col lg:flex-row justify-center items-start min-h-screen p-10 gap-10 mt-20 mb-20">
+       <div className="flex flex-col lg:flex-row justify-center items-start min-h-screen p-10 gap-10 mt-20 mb-20 relative">
+        
+        {/* Overlay to block clicks when popup is open */}
+      {showPopup && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-40"></div>
+      )}
 
 {/* Popup Modal */}
       {showPopup && (
@@ -126,7 +131,7 @@ const BookingHistory = () => {
 
         {/* Booking Details */}
         <div className="mb-6">
-          <h3 className="text-lg font-semibold mb-4">Booking Details</h3>
+          <h3 className="text-lg font-semibold mb-4">Booking Details:</h3>
           {selectedServices?.length > 0 ? (
             <ul>
               {selectedServices.map((service, index) => (
