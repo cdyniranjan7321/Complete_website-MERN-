@@ -42,7 +42,7 @@ const ServiceSelection = () => {
   return (
     <div className="flex justify-center items-center min-h-screen py-10 px-5 overflow-auto">
       <div className="max-w-2xl w-full bg-white rounded-lg shadow-lg p-5 mt-10">
-        <h2 className="text-xl font-bold text-black mb-5">Select Service</h2>
+        <h2 className="text-xl font-bold text-black mb-5">Please Select Services you want:</h2>
         {services.map((service, index) => (
           <div key={index} className="mb-8">
             <h3 className="bg-green text-white px-4 py-2 rounded-t-lg">{service.category}</h3>

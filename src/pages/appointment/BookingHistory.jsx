@@ -79,13 +79,13 @@ const BookingHistory = () => {
       console.error("Error saving booking data:", error);
     }
 
-    navigate("/appointment"); // Navigate back to the booking page
+    navigate("/appointment"); // Navigate back to the booking page.
   };
 
 
   return (
        <div className="flex flex-col lg:flex-row justify-center items-start min-h-screen p-10 gap-10 mt-20 mb-20 relative">
-        
+
         {/* Overlay to block clicks when popup is open */}
       {showPopup && (
         <div className="fixed inset-0 bg-black bg-opacity-50 z-40"></div>
