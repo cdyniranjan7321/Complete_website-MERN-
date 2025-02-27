@@ -18,11 +18,40 @@ const BookingHistory = () => {
     navigate("/appointment", { state: location.state });
   };
 
-  const handleCancel = () => {
-    // Impement cancellation logic (e.g. , API call cancel the booking )
-    alert("Booking Cancelled!");
-    navigate("/");
-  };
+const handleCancel = async () => {
+  try {
+    // Send cancellation data to the backend
+    const response = await fetch("http://localhost:6001/booking/cancel", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        selectedServices,
+        selectedStaff,
+        selectedDate,
+        selectedTime,
+        formData,
+        status: "Cancelled", // Add a status field to indicate cancellation
+      }),
+    });
+
+    if (response.ok) {
+      console.log("Booking cancellation recorded successfully!");
+      // Impement cancellation logic (e.g. , API call cancel the booking )
+      alert("Booking Cancelled!");
+      navigate("/");
+    } else {
+      console.error("Failed to record booking cancellation");
+      alert("Failed to cancel booking. Please try again.");
+    }
+  } catch (error) {
+    console.error("Error recording booking cancellation:", error);
+    alert("An error occurred while canceling the booking. Please try again.");
+  }
+};
+
+
 
   const handleClosePopup = async () => {
     try {
