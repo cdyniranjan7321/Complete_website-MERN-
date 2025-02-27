@@ -32,7 +32,7 @@ const DateTimeSelection = () => {
     <div className="flex flex-col lg:flex-row justify-center items-start min-h-screen p-10 gap-10 mt-20 mb-20">
       {/* Left Section - Calendar and Time Slots */}
       <div className="w-full lg:w-2/3 bg-white p-6 rounded-lg shadow-lg">
-        <h3 className="text-lg font-semibold mb-3">Select Date & Time</h3>
+        <h3 className="text-lg font-semibold mb-3">Select Date & Time:</h3>
 
           <Calendar
                       onChange={setSelectedDate}
@@ -55,7 +55,7 @@ const DateTimeSelection = () => {
 />
 
 
-        <h4 className="text-md font-semibold mt-4">Select Time</h4>
+        <h4 className="text-md font-semibold mt-4">Select Time:</h4>
         <div className="grid grid-cols-3 gap-3 mt-2">
           {timeSlots.map((time, index) => (
             <button

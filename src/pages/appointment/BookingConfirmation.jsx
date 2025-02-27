@@ -64,7 +64,7 @@ const BookingConfirmation = () => {
     <div className="flex flex-col lg:flex-row justify-center items-start min-h-screen p-10 gap-10 mt-20 mb-20">
       {/* Left Section - User Details */}
       <div className="w-full lg:w-2/3 bg-white p-6 rounded-lg shadow-lg">
-  <h3 className="text-lg font-semibold mb-3">Please fill out the details below</h3>
+  <h3 className="text-lg font-semibold mb-3">Please fill out the details below:</h3>
 
   {/* Full Name */}
   <div className="mb-4">
