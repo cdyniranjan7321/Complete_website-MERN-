@@ -36,6 +36,11 @@ const ServiceSelection = () => {
   };
 
   const handleConfirmSelection = () => {
+    console.log("Selected Services:", selectedServices); // Debugging line
+    if (selectedServices.length === 0) {
+      alert("Please select at least one service.");
+      return; // This will stop the function execution
+    }
     navigate("/staff-selection", { state: { selectedServices } });
   };
 

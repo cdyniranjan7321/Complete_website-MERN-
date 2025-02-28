@@ -32,7 +32,7 @@ const handleCancel = async () => {
         selectedDate,
         selectedTime,
         formData,
-        status: "Cancelled", // Add a status field to indicate cancellation
+        status: "Booking Cancelled", // Add a status field to indicate cancellation
       }),
     });
 
@@ -114,7 +114,6 @@ const handleCancel = async () => {
 
   return (
        <div className="flex flex-col lg:flex-row justify-center items-start min-h-screen p-10 gap-10 mt-20 mb-20 relative">
-
         {/* Overlay to block clicks when popup is open */}
       {showPopup && (
         <div className="fixed inset-0 bg-black bg-opacity-50 z-40"></div>
