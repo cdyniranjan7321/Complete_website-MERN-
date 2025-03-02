@@ -8,7 +8,7 @@ const services = [
       { name: "Buzz Cut", duration: "45 minutes", price: 1200, image: "/images/appointment/services/Buzz Cut.jpg" },
       { name: "High Fade", duration: "45 minutes", price: 1300, image: "/images/appointment/services/high fade.jpg" },
       { name: "Faded Quiff", duration: "1 hour", price: 1500, image: "/images/appointment/services/Faded Quiff.jpg" },
-      { name: "Mullet", duration: "45 minutes", price: 1250, image: "/public/images/appointment/services/Mullet Haircut.webp" },
+      { name: "Mullet", duration: "45 minutes", price: 1250, image: "/images/appointment/services/Mullet Haircut.webp" },
       { name: "Texture Fringe", duration: "45 minutes", price: 1350, image: "/images/appointment/services/Texture Fringe.jpg" },
     ],
   },
