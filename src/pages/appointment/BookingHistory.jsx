@@ -18,6 +18,7 @@ const BookingHistory = () => {
     navigate("/appointment", { state: location.state });
   };
 
+  
 const handleCancel = async () => {
   try {
     // Send cancellation data to the backend
