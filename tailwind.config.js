@@ -39,6 +39,12 @@ export default {
       fontFamily: {
         "primary": ['Inter', 'sans-serif'],
       },
+
+      screens: {
+        
+        '3xl': '1920px', // For screens wider than 1920px
+        '4xl': '2560px', // For ultra-wide screens
+      },
     },
   },
   plugins: [require("daisyui")],
