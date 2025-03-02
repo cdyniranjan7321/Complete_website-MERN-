@@ -26,4 +26,91 @@ header{
   border-radius: 0px 28px 0px 28px;
 }
 
+/* Remove default underline from date numbers */
+.custom-calendar abbr {
+  @apply no-underline text-[15px] font-medium;
+}
+
+.custom-arrow {
+  font-size: 30px; /* Default size of the arrow */
+  color: #333; /* Default color of the arrow */
+  transition: all 0.3s ease; /* Smooth transition for size and color change */
+}
+
+.custom-arrow:hover {
+  font-size: 34px;
+  transform: scale(1.3); /* Increase the size on hover (1.3 times the original size) */
+  color: #007BFF; /* Change color on hover */
+}
+
+
+.react-calendar__navigation__arrow {
+ background: none !important;
+ padding: 10px !important;
+}
+
+
+.react-calendar__navigation__label {
+  font-weight: bold; /* Make the month name bold */
+  font-size: 16px; /* Adjust font size if needed */
+  color: #333; /* You can also set the color of the month name */
+}
+
+
+
+
+.react-calendar__month-view__weekdays {
+  color: #807E7E; /* Change the color to blue or any color you like */
+  font-size: 15px; /* Adjust the font size */
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  font-weight: bold !important;
+ 
+}
+
+/* Today's date - when not selected */
+.today-date {
+  background-color: transparent !important; /* Default background */
+  display: flex;
+  color: #333 !important; /* Default color */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Selected date */
+.selected-date {
+  background-color: #39DB4A !important; /* Selected background */
+  color: #fff !important; /* Selected text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Special case when today is selected */
+.today-selected {
+  background-color: #39DB4A !important; /* Override transparent background */
+  color: #fff !important;
+}
+
+/* Hide dates that are part of neighboring months when viewing the current month */
+.hidden-date {
+  visibility: hidden !important; /* Hide neighboring dates */
+  pointer-events: none !important; /* Prevent interaction */
+}
+
+/* Make the neighboring months' dates visible when navigating to them */
+.react-calendar__tile--neighboringMonth {
+  visibility: visible !important; /* Make neighboring dates visible */
+  pointer-events: auto !important; /* Enable interaction */
+}
+
+
+
+
+ 
+
+
+
+
 

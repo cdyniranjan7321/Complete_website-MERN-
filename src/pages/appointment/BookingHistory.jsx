@@ -89,7 +89,7 @@ const BookingHistory = () => {
 {/* Popup Modal */}
       {showPopup && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-          <div className="bg-white p-6 md:p-8 rounded-lg shadow-lg w-[500px] h-auto text-center transition-all transform animate-fadeInUp">
+          <div className="bg-white p-6 md:p-10 rounded-lg shadow-lg w-[500px] h-auto text-center transition-all transform animate-fadeInUp">
 
                   {/* Centered Icon and Confirmed! Text */}
       <h2 className="text-2xl font-bold mb-4 text-green-600 flex flex-col items-center justify-center gap-2">
@@ -97,14 +97,14 @@ const BookingHistory = () => {
         Confirmed!
       </h2>
 
-            <p className="text-black mb-4">Thank you for choosing us! Your appointment has been booked successfully.</p>
+            <p className="text-black mb-6">Thank you for choosing us! Your appointment has been booked successfully.</p>
             <p className="text-black mb-6">
               Booking details will be sent to:{" "}
               <span className="font-semibold text-green">{formData?.email}</span>
             </p>
             <div className="flex flex-col gap-3">
               <button
-                className="bg-green font-semibold btn text-white px-8 py-2 rounded-md w-full mt-5"
+                className="bg-green font-semibold btn text-white text-[18px] px-8 py-2 rounded-md w-full mt-6"
                 onClick={handleClosePopup}
               >
                 Great, thanks!
