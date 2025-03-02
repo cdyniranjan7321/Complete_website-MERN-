@@ -8,6 +8,7 @@ const staffMembers = [
   { id: 3, name: "Michael Johnson", image: "staff3.jpg" },
 ];
 
+
 const StaffSelection = () => {
   const location = useLocation();
   const navigate = useNavigate();
