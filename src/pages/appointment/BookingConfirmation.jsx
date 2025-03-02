@@ -49,11 +49,25 @@ const BookingConfirmation = () => {
   };
   
   const handleConfirmBooking = () => {
-    // Check if primary fields are filled
-    if (!formData.fullName || !formData.email || !formData.phone) {
-      alert("Please fill out all required fields (Full Name, Email, and Phone).");
-      return;
-    }
+    // Regular expression for email validation
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  // Regular expression for phone validation (10-digit numeric)
+  const phoneRegex = /^[0-9]{10}$/;
+
+  if (!formData.fullName.trim()) {
+    alert("Please enter your full name.");
+    return;
+  }
+
+  if (!emailRegex.test(formData.email)) {
+    alert("Please enter a valid email address.");
+    return;
+  }
+
+  if (!phoneRegex.test(formData.phone)) {
+    alert("Please enter a valid 10-digit phone number.");
+    return;
+  }
   
     // Check if date and time are selected
     if (!selectedDate || !selectedTime) {
@@ -77,7 +91,7 @@ const BookingConfirmation = () => {
     <div className="flex flex-col lg:flex-row justify-center items-start min-h-screen p-5 md:p-10 gap-10 mt-20 mb-20">
       {/* Left Section - User Details */}
       <div className="w-full lg:w-2/3 bg-white p-6 rounded-lg shadow-lg">
-  <h3 className="text-[18px] sm:text-[20px] font-semibold mb-7">Please fill out the details below</h3>
+  <h3 className="text-lg font-semibold mb-3">Please fill out the details below</h3>
 
   {/* Full Name */}
   <div className="flex flex-col md:flex-row md:items-center mb-6 md:mb-4">

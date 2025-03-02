@@ -23,6 +23,7 @@ const services = [
   },
 ];
 
+
 const ServiceSelection = () => {
   const [selectedServices, setSelectedServices] = useState([]);
   const [expandedCategories, setExpandedCategories] = useState(
@@ -39,6 +40,11 @@ const ServiceSelection = () => {
   };
 
   const handleConfirmSelection = () => {
+    console.log("Selected Services:", selectedServices); // Debugging line
+    if (selectedServices.length === 0) {
+      alert("Please select at least one service.");
+      return; // This will stop the function execution
+    }
     navigate("/staff-selection", { state: { selectedServices } });
   };
 
@@ -53,8 +59,7 @@ const ServiceSelection = () => {
   return (
     <div className="flex justify-center items-center min-h-screen py-10 px-5 overflow-auto">
       <div className="max-w-2xl w-full bg-white rounded-lg shadow-lg p-5 mt-10">
-        <h2 className="text-[20px] font-bold text-black mb-5">Select Service</h2>
-
+        <h2 className="text-xl font-bold text-black mb-5">Select Service</h2>
         {services.map((service, index) => (
           <div key={index} className="mb-8">
             {/* Category Header */}

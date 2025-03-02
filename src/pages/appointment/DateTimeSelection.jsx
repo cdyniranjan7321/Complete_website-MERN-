@@ -48,57 +48,43 @@ const DateTimeSelection = () => {
     <div className="flex flex-col lg:flex-row justify-center items-start min-h-screen p-5 md:p-10 gap-10 mt-20 mb-20">
       {/* Left Section - Calendar and Time Slots */}
       <div className="w-full lg:w-2/3 bg-white p-6 rounded-lg shadow-lg">
-        <h3 className="text-[20px] font-semibold mb-6">Select Date & Time</h3>
-        <Calendar
-          onChange={setSelectedDate}
-          value={selectedDate}
-          minDate={new Date()}
-          className="custom-calendar !w-full py-6 px-2 sm:px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16 rounded-lg !shadow-[2px_10px_30px_0px_rgba(0,0,0,0.15)] !border-none"
-          tileClassName={({ date, view }) => {
-            const today = new Date();
-            today.setHours(0, 0, 0, 0); // Reset today's date time
-            
-            const selectedDateOnly = new Date(selectedDate);
-            selectedDateOnly.setHours(0, 0, 0, 0); // Reset selectedDate time
-            
-            const isToday = date.getTime() === today.getTime();
-            const isSelected = date.getTime() === selectedDateOnly.getTime(); // Now this should work
+        <h3 className="text-lg font-semibold mb-3">Select Date & Time</h3>
 
-          
-            if (view === "month") {
-              if (date < today) return "!bg-transparent !text-[#D9D9D9]";
-              if (isToday && isSelected) return "selected-date"; // Now should return correctly
-              if (isToday) return "today-date";
-              if (isSelected) return "selected-date"; 
-            }
-            return "";
-          }}
-        
-          prev2Label={null} // Remove year left arrow
-          next2Label={null} // Remove year right arrow
-          prevLabel={<span className="custom-arrow">{<MdKeyboardArrowLeft />}</span>} // Custom left arrow
-          nextLabel={<span className="custom-arrow">{<MdKeyboardArrowRight />}</span>} // Custom right arrow
-        />
+          <Calendar
+                      onChange={setSelectedDate}
+                      value={selectedDate}
+                      minDate={new Date()} // Prevents selection of past dates
+                      className="mb-4"
+                      tileClassName={({ date, view }) => {
+                  if (view === "month") {
+                  const today = new Date();
+                  const tomorrow = new Date();
+                  tomorrow.setDate(today.getDate() + 1);
+
+      if (date < today.setHours(0, 0, 0, 0)) {
+        return "text-gray-400"; // Light black (gray) for past dates
+      } else if (date.toDateString() === today.toDateString() || date.toDateString() === tomorrow.toDateString()) {
+        return "text-black font-bold"; // Black for today and tomorrow
+      }
+    }
+  }}
+/>
 
 
-        {/* <h4 className="text-md font-semibold mt-4">Select Time</h4> */}
-        <div className="w-full flex justify-center mt-6 bg-white p-6 px-2 sm:px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-20 rounded-lg shadow-[2px_10px_30px_0px_rgba(0,0,0,0.15)]">
-          <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-6 3xl:grid-cols-8 gap-5 gap-x-5 mt-2">
-            {timeSlots.map((time, index) => (
-              <button
-                key={index}
-                className={`p-3 font-medium w-[100px] border border-[#2b2b2b] rounded-md cursor-pointer text-sm ${
-                  selectedTime === time ? "bg-green text-white border-none" : "hover:bg-gray-200"
-                }`}
-                onClick={() => setSelectedTime(time)}
-              >
-                {time}
-              </button>
-            ))}
-          </div>
-
+        <h4 className="text-md font-semibold mt-4">Select Time</h4>
+        <div className="grid grid-cols-3 gap-3 mt-2">
+          {timeSlots.map((time, index) => (
+            <button
+              key={index}
+              className={`p-2 border rounded-md cursor-pointer text-sm ${
+                selectedTime === time ? "bg-green text-white" : "hover:bg-gray-200"
+              }`}
+              onClick={() => setSelectedTime(time)}
+            >
+              {time}
+            </button>
+          ))}
         </div>
-        
       </div>
 
       {/* Right Section - Booking Summary */}
