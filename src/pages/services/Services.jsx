@@ -131,20 +131,20 @@ const services = [
   {
     category: "Cuts & Styles",
     items: [
-      { name: "Buzz Cut", duration: "45 minutes", price: 1200, image: "buzzcut.jpg" },
-      { name: "High Fade", duration: "45 minutes", price: 1300, image: "highfade.jpg" },
-      { name: "Faded Quiff", duration: "1 hour", price: 1500, image: "fadedquiff.jpg" },
-      { name: "Mullet", duration: "45 minutes", price: 1250, image: "mullet.jpg" },
-      { name: "Texture Fringe", duration: "45 minutes", price: 1350, image: "texturefringe.jpg" },
+      { name: "Buzz Cut", duration: "45 minutes", price: 1200, image: "/images/appointment/services/Buzz Cut.jpg" },
+      { name: "High Fade", duration: "45 minutes", price: 1300, image: "/images/appointment/services/high fade.jpg" },
+      { name: "Faded Quiff", duration: "1 hour", price: 1500, image: "/images/appointment/services/Faded Quiff.jpg" },
+      { name: "Mullet", duration: "45 minutes", price: 1250, image: "/images/appointment/services/Mullet Haircut.webp" },
+      { name: "Texture Fringe", duration: "45 minutes", price: 1350, image: "/images/appointment/services/Texture Fringe.jpg" },
     ],
   },
   {
     category: "Facial Services",
     items: [
-      { name: "Basic Facial", duration: "45 minutes", price: 1600, image: "basicfacial.jpg" },
-      { name: "Brightening Facial", duration: "1 hour", price: 1800, image: "brighteningfacial.jpg" },
-      { name: "Vampire Facial", duration: "1 hour 45 minutes", price: 2500, image: "vampirefacial.jpg" },
-      { name: "European Facial", duration: "1 hour 30 minutes", price: 2200, image: "europeanfacial.jpg" },
+      { name: "Basic Facial", duration: "45 minutes", price: 1600, image: "/images/appointment/services/Basic Facial.webp" },
+      { name: "Brightening Facial", duration: "1 hour", price: 1800, image: "/images/appointment/services/Brightening Facial.png" },
+      { name: "Vampire Facial", duration: "1 hour 45 minutes", price: 2500, image: "/images/appointment/services/Vampire Facial.jpg" },
+      { name: "European Facial", duration: "1 hour 30 minutes", price: 2200, image: "/images/appointment/services/European Facial.png" },
     ],
   },
 ];
